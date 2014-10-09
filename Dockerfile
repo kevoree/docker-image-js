@@ -3,6 +3,6 @@ MAINTAINER  Maxime Tricoire <max.tricoire@gmail.com> (@maxleiko)
 
 WORKDIR     /
 
-RUN         npm i -g kevoree-nodejs-runtime@3.0.8
+RUN         npm i -g kevoree-nodejs-runtime@3.1.0
 
 ENTRYPOINT  ["kevoreejs"]
