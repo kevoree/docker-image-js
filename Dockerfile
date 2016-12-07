@@ -1,8 +1,12 @@
-FROM        node
+FROM        mhart/alpine-node:6.9.1
 MAINTAINER  Maxime Tricoire <max.tricoire@gmail.com> (@maxleiko)
 
-WORKDIR     /
+WORKDIR     /root
 
-RUN         npm i -g kevoree-nodejs-runtime@5.6.0
+RUN         apk add --no-cache make g++ python && \
+            npm i -g kevoree-cli node-gyp && \
+            npm cache clean
 
-ENTRYPOINT  ["kevoreejs"]
+COPY        ./config.json /root/.kevoree/config.json
+
+ENTRYPOINT  ["kevoree"]
