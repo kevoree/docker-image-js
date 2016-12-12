@@ -7,7 +7,6 @@ RUN         npm i -g kevoree-cli && \
             npm cache clean
 
 COPY        ./config.json /root/.kevoree/config.json
-COPY        ./start.sh /root/start.sh
 
 ENTRYPOINT  ["kevoree"]
 CMD         ["start"]
