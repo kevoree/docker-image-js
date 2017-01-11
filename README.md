@@ -1,4 +1,4 @@
 docker-image-js
 ===============
 
-kevoree-js Dockerfile image
+**THIS REPO IS DEPRECATED IN FAVOR OF [kevoree-cli/docker](https://github.com/kevoree/kevoree-js-cli/tree/master/docker)**
